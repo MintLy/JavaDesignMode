@@ -8,7 +8,7 @@ public class Client
 		q3.createTire().tire();
 		q3.createEngine().engine();
 		q3.createBrake().brake();
-		System.out.println("--------我是分割线--------");
+		System.out.println("\n----------我是优雅的分割线----------\n");
 		CarFactory q7 = new Q7Factory();
 		q7.createTire().tire();
 		q7.createEngine().engine();

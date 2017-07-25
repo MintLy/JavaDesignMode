@@ -12,16 +12,16 @@ public class CallOfDuty
 		mLifeValue -= 10;
 		System.out.println("进度升级啦");
 		mCheckpoint++;
-		System.out.printf("到达 %d关", mCheckpoint);
+		System.out.printf("到达 %d关\n", mCheckpoint);
 	}
 
 	// 退出游戏
 	public void quit()
 	{
-		System.out.println("----------我是优雅的分割线----------");
+		System.out.println("\n----------我是优雅的分割线----------\n");
 		System.out.println("退出前的游戏属性 : " + this.toString());
 		System.out.println("退出游戏");
-		System.out.println("----------我是优雅的分割线----------");
+		System.out.println("\n----------我是优雅的分割线----------\n");
 	}
 
 	/**

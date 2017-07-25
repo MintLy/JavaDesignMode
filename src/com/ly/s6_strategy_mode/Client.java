@@ -13,7 +13,7 @@ public class Client
 	{
 		Client t = new Client();
 		t.setStrategy(new BusStrtegy());
-		System.out.printf("乘坐公交%s共消费%s元", 20, t.calculatorPrice(20));
+		System.out.printf("乘坐公交%s共消费%s元\n", 20, t.calculatorPrice(20));
 	}
 
 	private int calculatorPrice(int km)
