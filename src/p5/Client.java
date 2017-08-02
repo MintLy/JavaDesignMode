@@ -1,11 +1,5 @@
 package p5;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-
 /**
  * 接口隔离原则
  * 
@@ -38,7 +32,8 @@ public class Client
 			@Override
 			public void responseResult(String status)
 			{
-				System.out.println("response()--->responseResult(String status)");
+				System.out
+						.println("response()--->responseResult(String status)");
 			}
 
 			@Override
