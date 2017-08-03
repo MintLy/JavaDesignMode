@@ -17,13 +17,13 @@ public class Client
 			@Override
 			public void responseResult(String status)
 			{
-				System.err.printf("请求状态: %s ", status);
+				System.out.println("request()--->requestResult(String status)");
 			}
 
 			@Override
 			public void requestResult(String status)
 			{
-				System.out.println("request()--->requestResult(String status)");
+				System.out.printf("请求状态: %s \n", status);
 			}
 		});
 		c.response(new CallBack()
@@ -32,14 +32,14 @@ public class Client
 			@Override
 			public void responseResult(String status)
 			{
-				System.out
-						.println("response()--->responseResult(String status)");
+				System.err.printf("响应状态: %s \n", status);
 			}
 
 			@Override
 			public void requestResult(String status)
 			{
-				System.err.printf("响应状态: %s ", status);
+				System.out
+						.println("response()--->responseResult(String status)");
 			}
 		});
 
@@ -96,6 +96,6 @@ public class Client
 
 	public void response(CallBack cb)
 	{
-		cb.requestResult("响应失败");
+		cb.responseResult("响应失败");
 	}
 }

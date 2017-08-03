@@ -5,15 +5,13 @@ public class Client
 	public static void main(String[] args)
 	{
 		// 构造各个领导对象
-		GroupLeader groupLeader = new GroupLeader();
-		Director director = new Director();
-		Manager manager = new Manager();
-		Boss boss = new Boss();
+		Liang liang = new Liang();
+		Song song = new Song();
+		Chu chu = new Chu();
 		// 设置上一级领导处理者对象
-		groupLeader.nextHandler = director;
-		director.nextHandler = manager;
-		manager.nextHandler = boss;
+		liang.nextHandler = song;
+		song.nextHandler = chu;
 		// 发起报销申请
-		groupLeader.handlerRquest(50);
+		liang.handlerRquest(50000);
 	}
 }

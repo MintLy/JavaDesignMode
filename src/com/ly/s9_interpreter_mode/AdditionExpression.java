@@ -1,5 +1,6 @@
 package com.ly.s9_interpreter_mode;
 
+//加法表达式
 public class AdditionExpression extends OperatorExpression
 {
 	public AdditionExpression(ArithmeticExpression pExp1,

@@ -1,18 +1,18 @@
 package com.ly.s8_dutyLink_mode;
 
-public class GroupLeader extends Leader
+public class Chu extends Leader
 {
 
 	@Override
 	public int limit()
 	{
-		return 1000;
+		return Integer.MAX_VALUE;
 	}
 
 	@Override
 	public void handle(int money)
 	{
-		System.out.println("组长批复报销" + money + "元");
+		System.out.println("楚大批复报销" + money + "元");
 	}
 
 }

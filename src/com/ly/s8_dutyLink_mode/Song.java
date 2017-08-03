@@ -1,6 +1,6 @@
 package com.ly.s8_dutyLink_mode;
 
-public class Director extends Leader
+public class Song extends Leader
 {
 
 	@Override
@@ -12,7 +12,7 @@ public class Director extends Leader
 	@Override
 	public void handle(int money)
 	{
-		System.out.println("主管批复报销" + money + "元");
+		System.out.println("嵩哥批复报销" + money + "元");
 	}
 
 }
