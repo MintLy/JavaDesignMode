@@ -11,7 +11,7 @@ public class Client
 		RightCommand rightCommand = new RightCommand(machine);
 		FallCommand fallCommand = new FallCommand(machine);
 		TransformCommand transformCommand = new TransformCommand(machine);
-		// 设置按钮时间绑定
+		// 设置按钮事件绑定
 		Buttons buttons = new Buttons();
 		buttons.setLeftCommand(leftCommand);
 		buttons.setRightCommand(rightCommand);

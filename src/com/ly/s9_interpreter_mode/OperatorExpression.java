@@ -1,6 +1,6 @@
 package com.ly.s9_interpreter_mode;
 
-//操作符表达式
+//操作符表达式(非终结符表达式)
 public abstract class OperatorExpression extends ArithmeticExpression
 {
 	// 声明两个成员变量存储运算符号两边的数字解释器

@@ -36,8 +36,7 @@ public class Calculator
 					exp2 = new NumExpression(Integer.valueOf(elements[++i]));
 					mExpStack.push(new SubtractionExpression(exp1, exp2));
 					break;
-				default:// 如果为数字
-					// 如果不是运算符则为数字
+				default:// 如果不是运算符则为数字
 					// 若是数字，直接构造数字解释器并压入栈
 					mExpStack.push(
 							new NumExpression(Integer.valueOf(elements[i])));

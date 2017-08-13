@@ -4,17 +4,18 @@ public class Client
 {
 	public static void main(String[] args)
 	{
-		CompanyA a = new CompanyA();
-		check(a.iterator());
-		CompanyB b = new CompanyB();
-		check(b.iterator());
+		Company a = new CompanyA();
+		check(a);
+		Company b = new CompanyB();
+		check(b);
 	}
 
-	public static void check(Iterator pIterator)
+	public static void check(Company pCompany)
 	{
-		while (pIterator.hasNext())
+		Iterator iterator = pCompany.iterator();
+		while (iterator.hasNext())
 		{
-			System.out.println(pIterator.next());
+			System.out.println(iterator.next());
 		}
 	}
 }

@@ -15,7 +15,7 @@ public class Coder implements Observer
 	@Override
 	public void update(Observable o, Object arg)
 	{
-		System.out.printf("Hello%s,有更新,内容为:%s\n", this.mName, arg);
+		System.out.printf("Hello,%s,有新的消息通知,内容为:%s\n", this.mName, arg);
 	}
 
 	@Override
