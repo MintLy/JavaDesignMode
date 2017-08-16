@@ -9,16 +9,16 @@ public class Client
 		// 加糖
 		Sugar sugar = new Sugar();
 		// 大杯原味咖啡
-		LargeCoffee largeOrdinaryCoffee = new LargeCoffee(ordinary);
+		Coffee largeOrdinaryCoffee = new LargeCoffee(ordinary);
 		largeOrdinaryCoffee.makeCoffee();
 		// 大杯加糖咖啡
-		LargeCoffee largeSugarCoffee = new LargeCoffee(sugar);
+		Coffee largeSugarCoffee = new LargeCoffee(sugar);
 		largeSugarCoffee.makeCoffee();
 		// 小杯原味咖啡
-		SmallCoffee smallOrdinaryCoffer = new SmallCoffee(ordinary);
+		Coffee smallOrdinaryCoffer = new SmallCoffee(ordinary);
 		smallOrdinaryCoffer.makeCoffee();
 		// 小杯加糖咖啡
-		SmallCoffee smallSugarCoffee = new SmallCoffee(sugar);
+		Coffee smallSugarCoffee = new SmallCoffee(sugar);
 		smallSugarCoffee.makeCoffee();
 	}
 }

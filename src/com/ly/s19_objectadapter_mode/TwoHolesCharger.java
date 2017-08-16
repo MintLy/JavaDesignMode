@@ -6,10 +6,11 @@ package com.ly.s19_objectadapter_mode;
  * @author Host-0
  * 
  */
-public class Volt220
+public class TwoHolesCharger
 {
-	public int getVolt220()
+
+	public void TwoHolesCharges()
 	{
-		return 220;
+		System.out.println("给电脑充电");
 	}
 }

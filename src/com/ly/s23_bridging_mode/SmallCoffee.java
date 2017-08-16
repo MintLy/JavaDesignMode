@@ -11,7 +11,7 @@ public class SmallCoffee extends Coffee
 	@Override
 	public void makeCoffee()
 	{
-		System.out.printf("小杯的 %s 咖啡\n", impl.getClass().getSimpleName());
+		System.out.printf("小杯的 %s 咖啡\n", impl.addSomething());
 	}
 
 }

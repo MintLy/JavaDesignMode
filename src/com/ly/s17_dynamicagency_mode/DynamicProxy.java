@@ -17,7 +17,9 @@ public class DynamicProxy implements InvocationHandler
 			throws Throwable
 	{
 		// 调用被代理类的方法
+		System.out.println("开启事务");
 		Object result = method.invoke(mObj, args);
+		System.out.println("提交事务");
 		return result;
 	}
 

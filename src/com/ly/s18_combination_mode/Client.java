@@ -17,6 +17,7 @@ public class Client
 		dirWin.addDir(new File("w.txt"));
 		// Users目录下有个Users.java文件
 		dirUsers.addDir(new File("Users.java"));
+		dirWin.clear();
 		// 打印出文件结构
 		diskC.print();
 	}
